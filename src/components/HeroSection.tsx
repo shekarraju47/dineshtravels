@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 const HeroSection: React.FC = () => {
   return (
-    <div className="relative w-full max-sm:full max-sm:h-[560px] max-md:h-[700px] h-[919px]">
+    <div className="relative w-full max-sm:full max-sm:h-[560px] max-md:h-[600px] h-[919px]">
       <img
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/776b7d8aaea88d1c8abf4aa39d3403d7b8b6ca3f"
         alt="Hero background"
@@ -17,7 +17,7 @@ const HeroSection: React.FC = () => {
       </div>
 
       <div className="absolute left-20 top-2/4 max-sm:top-1/3 max-w-screen-sm max-md:left-10 max-sm:left-5">
-        <div className="flex flex-col gap-6 mb-12">
+        <div className="flex flex-col gap-6 mb-12 ">
           <h2 className="text-6xl font-bold text-white max-sm:w-80 leading-[59.4px] max-md:text-5xl max-sm:text-4xl max-sm:leading-none">
             Seamless Travel, Exceptional Service
           </h2>

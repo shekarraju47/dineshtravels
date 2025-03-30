@@ -7,7 +7,7 @@ const AboutSection: React.FC = () => {
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/5d2a00ebb5cd2877654759e24f12e327a6602405"
           alt="Experience Travel"
-          className="w-full h-[590px] rounded-[12px] object-cover max-sm:pl-10 max-sm:pr-10 p-10"
+          className="w-full h-[590px] rounded-[50px] object-cover max-sm:pl-10 max-sm:pr-10 p-10"
         />
       </div>
       <div className="flex flex-col flex-1 max-sm:gap-2 max-sm:pl-10 max-sm:pr-10  gap-8">
