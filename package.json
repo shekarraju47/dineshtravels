@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "homepage": "https://shekarraju47.github.io/dinsehtravels",
+    "homepage": "https://shekarraju47.github.io/dineshtravels",
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
