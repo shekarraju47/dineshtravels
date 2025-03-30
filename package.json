@@ -6,12 +6,11 @@
   "scripts": {
     "homepage": "https://shekarraju47.github.io/dinsehtravels",
     "dev": "vite",
-    "build": "react-scripts build",
+    "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    "start": "react-scripts start"
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.0.17",
