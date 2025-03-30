@@ -24,7 +24,7 @@ const JourneyContent = () => {
           Driven by Trust, <br />
           Powered by Service
         </h2>
-        <p className="flex-1 shrink self-stretch pl-0.5 mt-6 w-full max-md:text-xl max-sm:text-lg leading-10 basis-0 text-zinc-600 max-md:max-w-full">
+        <p className="flex-1 shrink self-stretch pl-0.5 mt-6 w-full max-md:text-xl max-sm:leading-[2] max-sm:text-lg leading-10 basis-0 text-zinc-600 max-md:max-w-full">
           At Dinesh Travels, we have been redefining road transportation with a
           commitment to safety, comfort, and reliability. With over a decade of
           experience, we've built a strong reputation in the industry, providing

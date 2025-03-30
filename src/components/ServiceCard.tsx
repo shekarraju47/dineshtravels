@@ -18,7 +18,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({
       <img
         src={imageUrl}
         alt={altText}
-        className="w-full h-[546px] rounded-[12px] object-cover mb-[48px]"
+        className="w-full h-[546px] max-sm:h-[350px] rounded-[12px] object-cover mb-[48px]"
       />
       <h3 className="mb-3 text-3xl font-semibold text-center text-zinc-800">
         {title}

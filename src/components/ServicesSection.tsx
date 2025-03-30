@@ -36,14 +36,14 @@ const ServicesSection: React.FC = () => {
         <h2 className="text-5xl font-bold text-center text-zinc-800 max-md:text-4xl max-sm:text-3xl">
           Our Services
         </h2>
-        <p className="text-2xl leading-9 text-center max-w-[800px] text-zinc-600 text-opacity-80 max-md:text-xl max-sm:text-lg">
+        <p className="text-2xl max-sm:p-2 leading-9 text-center max-w-[800px] text-zinc-600 text-opacity-80 max-md:text-xl max-sm:text-lg">
           At Dinesh Travels, we provide secure and efficient transport for
           business professionals. Our curated tour packages offer unforgettable
           experiences for both leisure and corporate retreats.
         </p>
       </header>
 
-      <div className="flex gap-9 max-md:flex-col">
+      <div className="flex gap-9 max-sm:pl-10 max-sm:pr-10 max-md:flex-col">
         {services.map((service, index) => (
           <ServiceCard
             key={index}
@@ -55,7 +55,7 @@ const ServicesSection: React.FC = () => {
         ))}
       </div>
 
-      <div className="flex gap-6 justify-center mt-12 max-sm:flex-col">
+      <div className="flex gap-6 max-sm:pl-[25px] max-sm:pr-[25px] justify-center mt-12 max-sm:flex-col">
         <button className="px-10 py-4 text-lg font-semibold text-white bg-sky-600 rounded-xl w-[180px] max-sm:w-full">
           Learn More
         </button>
