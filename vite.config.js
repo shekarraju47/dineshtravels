@@ -10,6 +10,7 @@ export default defineConfig({
   plugins: [react(),
   tailwindcss(),
   ],
+  base: '/dinsehtravels',
 
 
   server: {
