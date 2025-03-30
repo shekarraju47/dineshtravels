@@ -1,36 +1,30 @@
 "use client";
 import * as React from "react";
 
-const Navbar: React.FC = () => {
+const Navbar: React.FC = (props) => {
 
 
-  const scrollToBottom = () => {
-    window.scrollTo({
-      top: document.documentElement.scrollHeight,
-      behavior: 'smooth', // Optional: Adds a smooth scrolling animation
-    });
-  };
   return (
-    <nav className="flex justify-between items-center h-[106px] max-sm:h-20">
-      <h1 className="text-2xl font-bold text-white">DineshTravels!</h1>
+    <nav style={{ color: 'black' }} className="flex justify-between items-center h-[106px] max-sm:h-20">
+      <h1 style={{ color: 'black' }} className="text-2xl font-bold text-white">DineshTravels!</h1>
 
       <div className="flex min-md:gap-3 min-lg:gap-8 min-xl:gap-12 items-center max-md:hidden">
-        <a href="#" className="text-lg font-semibold text-white">
+        <a style={{ color: 'black' }} href="#" className="text-lg font-semibold text-white">
           Home
         </a>
-        <a
+        <a style={{ color: 'black' }}
           href="#"
           className="text-lg font-semibold text-white text-opacity-60"
         >
           About us
         </a>
-        <a
+        <a style={{ color: 'black' }}
           href="#"
           className="text-lg font-semibold text-white text-opacity-60"
         >
           Our Services
         </a>
-        <a
+        <a style={{ color: 'black' }}
           href="#"
           className="text-lg font-semibold text-white text-opacity-60"
         >
