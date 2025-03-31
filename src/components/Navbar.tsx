@@ -12,7 +12,7 @@ const Navbar: React.FC = (props) => {
     return current.pathname === path;
   }
 
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
 
   const color = IsHome('/dineshtravels') ? 'white' : 'black';
 
@@ -43,9 +43,7 @@ const Navbar: React.FC = (props) => {
     // }
   ]
 
-  const hamburber = () => {
-    setIsOpen(true)
-  }
+
 
   return (
     <nav style={{ color: 'black', }} className="flex justify-between items-center h-[106px] max-sm:h-20">
@@ -70,19 +68,7 @@ const Navbar: React.FC = (props) => {
         </button>
 
         <button className="hidden max-md:block" aria-label="Menu">
-          <button onClick={(() => hamburber())} className={`text-${color}`}>
-            ☰
-            {isOpen && <nav className="bg-gray-800 text-white w-64 p-4 fixed top-0 right-0 h-full">
-              <ul className="space-y-2">
-                <button onClick={() => hamburber()}>X</button>
-                {NavItems.map((item, index) => (
-                  <li key={index} className="hover:bg-gray-700 p-2 rounded">
-                    {item.name}
-                  </li>
-                ))}
-              </ul>
-            </nav>}
-          </button>
+          ☰
         </button>
       </div>
     </nav>
