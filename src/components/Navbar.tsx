@@ -1,6 +1,7 @@
 "use client";
 import * as React from "react";
 import { NavLink, useLocation } from "react-router-dom";
+import { useState } from "react";
 
 
 
@@ -11,13 +12,14 @@ const Navbar: React.FC = (props) => {
     return current.pathname === path;
   }
 
+  const [isOpen, setIsOpen] = useState(false);
 
-  const color = IsHome('/dineshtravels/') ? 'white' : 'black';
+  const color = IsHome('/dineshtravels') ? 'white' : 'black';
 
   const NavItems = [{
     id: 1,
     name: 'Home',
-    path: '/dineshtravels/',
+    path: '/dineshtravels',
     className: 'text-lg font-semibold text-white text-opacity-60',
     // "text-lg font-semibold"
   },
@@ -41,6 +43,9 @@ const Navbar: React.FC = (props) => {
     // }
   ]
 
+  const hamburber = () => {
+    setIsOpen(true)
+  }
 
   return (
     <nav style={{ color: 'black', }} className="flex justify-between items-center h-[106px] max-sm:h-20">
@@ -59,18 +64,25 @@ const Navbar: React.FC = (props) => {
         ))}
       </div>
 
-      <div className="flex gap-6 items-center">
+      <div className="flex gap-6 items-center ">
         <button className="px-9 py-4 text-lg font-semibold text-white bg-sky-600 rounded-xl  max-sm:hidden">
           <a className="scroll-smooth" href="#Home"> Get in touch</a>
         </button>
 
         <button className="hidden max-md:block" aria-label="Menu">
-          <a href="#Home">
-            {/* <i className="ti ti-menu-2 text-2xl text-white" /> */}
-            .
-            .
-            .
-          </a>
+          <button onClick={(() => hamburber())} className={`text-${color}`}>
+            ☰
+            {isOpen && <nav className="bg-gray-800 text-white w-64 p-4 fixed top-0 right-0 h-full">
+              <ul className="space-y-2">
+                <button onClick={() => hamburber()}>X</button>
+                {NavItems.map((item, index) => (
+                  <li key={index} className="hover:bg-gray-700 p-2 rounded">
+                    {item.name}
+                  </li>
+                ))}
+              </ul>
+            </nav>}
+          </button>
         </button>
       </div>
     </nav>
