@@ -12,14 +12,13 @@ const Navbar: React.FC = (props) => {
     return current.pathname === path;
   }
 
-  const [isOpen, setIsOpen] = useState(true);
 
-  const color = IsHome('/dineshtravels') ? 'white' : 'black';
+  const color = IsHome('/dineshtravels/') ? 'white' : 'black';
 
   const NavItems = [{
     id: 1,
     name: 'Home',
-    path: '/dineshtravels',
+    path: '/dineshtravels/',
     className: 'text-lg font-semibold text-white text-opacity-60',
     // "text-lg font-semibold"
   },
