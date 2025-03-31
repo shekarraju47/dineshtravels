@@ -1,16 +1,22 @@
 import React from "react";
 // import Header from "./Header";
-import Hero from "./Hero";
-import Navbar from "../../Navbar";
-import { CommitmentSection } from "../CommitmentSection/CommitmentSection";
-import ServicesSection from "../../ServicesSection";
-import ContactPage from "../../ContactForm/ContactPage";
-import Footer from "../../Footer/Footer";
+import Hero from "./Hero"; // Ensure Hero.tsx exists in the same folder and is exported correctly
+import Navbar from "../../Navbar"; // Ensure Navbar.tsx exists in the specified path and is exported correctly
+import { CommitmentSection } from "../CommitmentSection/CommitmentSection"; // Ensure CommitmentSection.tsx is exported correctly
+import ServicesSection from "../../ServicesSection"; // Ensure ServicesSection.tsx exists in the specified path and is exported correctly
+import ContactPage from "../../ContactForm/ContactPage"; // Ensure ContactPage.tsx exists in the specified path and is exported correctly
+import Footer from "../../Footer/Footer"; // Ensure Footer.tsx exists in the specified path and is exported correctly
+React.useEffect(() => {
+  // Ensure the page is zoomed out to 100% when this component is rendered
+  document.body.style.zoom = "100%";
 
-
+  // Cleanup function to reset zoom when the component is unmounted
+  return () => {
+    document.body.style.zoom = "";
+  };
+}, []);
 const DineshTravels: React.FC = () => {
 
-  const page = "about"
   const heroTitle = (
     <>
       <span className="font-bold">Where </span>
@@ -27,7 +33,7 @@ const DineshTravels: React.FC = () => {
     "We are Dinesh Travels, your trusted partner in road transportation since 2007. Based in Hyderabad, we specialize in delivering seamless travel experiences—whether it's your daily commute, a weekend getaway. With a commitment to safety, comfort, and innovation, we redefine the way India travels.";
 
   return (
-    <div className="flex flex-col max-md:mt-10 justify-center h-[919px pt-10">
+    <div className="flex flex-col max-md:mt-10 justify-center h-[919px] pt-10">
       <div className="p-5">
         <div className="absolute inset-x-0 px-20 top-[40px] max-md:px-10 max-sm:px-5">
           <Navbar />
