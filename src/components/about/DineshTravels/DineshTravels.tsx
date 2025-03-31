@@ -27,11 +27,11 @@ const DineshTravels: React.FC = () => {
     "We are Dinesh Travels, your trusted partner in road transportation since 2007. Based in Hyderabad, we specialize in delivering seamless travel experiences—whether it's your daily commute, a weekend getaway. With a commitment to safety, comfort, and innovation, we redefine the way India travels.";
 
   return (
-
-
-    <div className="flex flex-col justify-center pt-10">
+    <div className="flex flex-col max-md:mt-10 justify-center h-[919px pt-10">
       <div className="p-5">
-        <Navbar />
+        <div className="absolute inset-x-0 px-20 top-[40px] max-md:px-10 max-sm:px-5">
+          <Navbar />
+        </div>
         <Hero
           title={heroTitle}
           description={heroDescription}
