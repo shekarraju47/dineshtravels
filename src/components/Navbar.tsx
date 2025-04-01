@@ -72,11 +72,10 @@ const Navbar: React.FC = (props) => {
 
           <div className="flex items-center justify-center h-screen">
             <button className="ghost-button" onClick={() => setIsOpen(true)}>
-              {!isOpen && <Menu style={{ color: `${color}` }} className="w-6 h-6" />}
+              {!isOpen && <Menu style={{ color: `${color}` }} className="w-6 h-6 border-none" />}
             </button>
             <Dialog open={isOpen} onOpenChange={setIsOpen}>
-              <DialogContent>
-
+              <DialogContent className="border-none">
                 {NavItems.map((item) => (
                   <NavLink
                     key={item.id}
