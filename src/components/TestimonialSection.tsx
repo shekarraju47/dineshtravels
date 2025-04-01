@@ -4,9 +4,9 @@ import TestimonialCarousel from "./TestimonialCarousel";
 
 const TestimonialSection: React.FC = () => {
   return (
-    <section className="scroll-smooth flex flex-col gap-16 items-center px-32 py-20 w-full bg-stone-50 rounded-[32px] max-md:px-20 max-md:py-16 max-sm:px-5 max-sm:py-10">
+    <section className="scroll-smooth p-20 max-md:p-5 flex flex-col gap-16 items-center w-full bg-stone-50 rounded-[32px]">
       <div className="flex flex-col gap-32 items-center w-full max-md:gap-20 max-sm:gap-16">
-        <header className="flex justify-center items-center px-72 w-full max-md:px-24 max-sm:px-5">
+        <header className="flex justify-center items-center w-full">
           <div className="flex flex-col gap-2 text-center">
             <h2 className="text-5xl text-zinc-800 text-opacity-90 max-md:text-4xl max-sm:text-3xl">
               Hear from Our

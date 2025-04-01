@@ -31,7 +31,7 @@ const ServicesSection: React.FC = () => {
   ];
 
   return (
-    <section className="p-20 max-md:px-10 max-sm:px-5">
+    <section className="p-20 max-md:px-5">
       <header className="flex flex-col gap-5 items-center mb-12">
         <h2 className="text-5xl font-bold text-center text-zinc-800 max-md:text-4xl max-sm:text-3xl">
           Our Services
@@ -43,7 +43,7 @@ const ServicesSection: React.FC = () => {
         </p>
       </header>
 
-      <div className="flex gap-9 max-sm:pl-10 max-sm:pr-10 max-md:flex-col">
+      <div className="flex gap-9 max-md:flex-col">
         {services.map((service, index) => (
           <ServiceCard
             key={index}
@@ -55,7 +55,7 @@ const ServicesSection: React.FC = () => {
         ))}
       </div>
 
-      <div className="flex gap-6 max-sm:pl-[25px] max-sm:pr-[25px] justify-center mt-12 max-sm:flex-col">
+      <div className="flex gap-6 justify-center mt-12 max-sm:flex-col">
         <button className="px-10 py-4 text-lg font-semibold text-white bg-sky-600 rounded-xl w-[180px] max-sm:w-full">
           Learn More
         </button>

@@ -10,7 +10,7 @@ const StatisticItem: React.FC<StatisticItemProps> = ({
   description,
 }) => {
   return (
-    <article className="flex-1 shrink self-stretch py-2 my-auto basis-0">
+    <article className="flex-1 shrink self-stretch my-auto basis-0">
       <h3 className="text-2xl font-bold leading-tight text-neutral-800">
         {number}
       </h3>

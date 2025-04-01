@@ -46,7 +46,7 @@ const TestimonialCarousel: React.FC = () => {
   return (
     <>
       <div
-        className="flex gap-16 justify-center items-center px-3 py-6 w-full max-sm:gap-5"
+        className="flex gap-16 justify-center items-center w-full max-sm:gap-5"
         role="region"
         aria-label="Testimonial Carousel"
       >

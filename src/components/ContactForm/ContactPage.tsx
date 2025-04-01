@@ -12,8 +12,8 @@ const ContactPage: React.FC = () => {
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,900;1,900&family=Open+Sans:wght@400;600;700&display=swap"
         rel="stylesheet"
       />
-      <div id="Home" className="flex gap-32 justify-center items-center px-20 py-0 mx-auto my-0 w-full max-w-screen-xl min-h-[864px] max-md:flex-col max-md:gap-16 max-md:p-10 max-sm:gap-10 max-sm:p-5">
-        <div className="flex flex-col flex-1 gap-4 justify-center items-center pl-6 max-md:text-center max-md:pl-0">
+      <div id="Home" className="flex justify-center p-20 max-md:px-5 items-center gap-5 max-md:flex-col">
+        <div className="flex flex-col flex-1 justify-center items-center max-md:text-center ">
           <h1 className="w-full text-6xl italic font-black tracking-tight leading-[64.8px] text-zinc-800 max-md:text-5xl max-sm:text-3xl">
             Get in Touch
           </h1>
