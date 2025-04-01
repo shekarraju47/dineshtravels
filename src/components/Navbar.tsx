@@ -2,8 +2,9 @@
 import * as React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
-
-
+// import { Button } from '@radix-ui/react-dialog'
+import { Dialog, DialogContent, DialogTitle, } from "@radix-ui/react-dialog"
+import { Menu } from "lucide-react";
 
 
 const Navbar: React.FC = (props) => {
@@ -12,6 +13,7 @@ const Navbar: React.FC = (props) => {
     return current.pathname === path;
   }
 
+  const [isOpen, setIsOpen] = useState(false);
 
   const color = IsHome('/dineshtravels/') ? 'white' : 'black';
 
@@ -67,7 +69,28 @@ const Navbar: React.FC = (props) => {
         </button>
 
         <button className="hidden max-md:block" aria-label="Menu">
-          ☰
+
+          <div className="flex items-center justify-center h-screen">
+            <button className="ghost-button" onClick={() => setIsOpen(true)}>
+              {!isOpen && <Menu style={{ color: `${color}` }} className="w-6 h-6" />}
+            </button>
+            <Dialog open={isOpen} onOpenChange={setIsOpen}>
+              <DialogContent>
+
+                {NavItems.map((item) => (
+                  <NavLink
+                    key={item.id}
+                    to={item.path}
+                    style={{ color: `${color}` }}
+                    className={` ${item.className} flex`}
+                  >
+                    {item.name}
+                  </NavLink>
+                ))}
+              </DialogContent>
+            </Dialog>
+          </div>
+
         </button>
       </div>
     </nav>
