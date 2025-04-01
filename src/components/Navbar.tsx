@@ -75,7 +75,7 @@ const Navbar: React.FC = (props) => {
               {!isOpen && <Menu style={{ color: `${color}` }} className="w-6 h-6 border-none" />}
             </button>
             <Dialog open={isOpen} onOpenChange={setIsOpen}>
-              <DialogContent className="border-none">
+              <DialogContent className="p-5 border-none">
                 {NavItems.map((item) => (
                   <NavLink
                     key={item.id}
