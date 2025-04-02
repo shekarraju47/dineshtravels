@@ -2,7 +2,7 @@ import React from "react";
 
 const AboutSection: React.FC = () => {
   return (
-    <section className="flex items-center bg-stone-50 gap-12 max-md:flex-col p-20 max-md:px-5">
+    <section className="flex items-center bg-stone-50 min-md:gap-12 max-md:flex-col p-20 max-md:px-5">
       <div className="flex-1">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/5d2a00ebb5cd2877654759e24f12e327a6602405"
@@ -12,7 +12,7 @@ const AboutSection: React.FC = () => {
       </div>
       <div className="flex flex-col flex-1 gap-8">
         <div className="flex flex-col max-sm:gap-1 gap-5">
-          <h2 className="text-5xl font-bold leading-[57.6px] text-zinc-800 max-md:text-4xl max-sm:text-3xl">
+          <h2 className="text-5xl font-bold leading-[50.6px] text-zinc-800 max-md:text-4xl max-sm:text-3xl">
             Experience Travel, The Dinesh Way
           </h2>
           <p className="text-2xl leading-10 text-zinc-600 text-opacity-80 max-md:text-xl max-sm:text-lg">
