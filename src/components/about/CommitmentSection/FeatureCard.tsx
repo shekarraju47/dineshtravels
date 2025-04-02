@@ -25,7 +25,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   return (
     <div className="flex flex-wrap gap-0.5 justify-center items-center p-8 mt-20 w-full bg-white rounded-xl border border-solid border-neutral-200 shadow-[0px_2px_8px_rgba(0,0,0,0.1)] max-md:px-5 max-md:mt-10 max-md:max-w-full">
       <div
-        className={`flex flex-col flex-1 gap-4 shrink self-stretch my-auto p-4 min-md:p-10 basis-40 min-w-[240px] max-md:max-w-full ${contentOrder}`}
+        className={`flex flex-col flex-1 gap-4 shrink self-stretch my-auto mb-2 min-md:p-10 basis-40 min-w-[240px] max-md:max-w-full ${contentOrder}`}
       >
         <div className="flex flex-col w-full max-md:max-w-full">
           <div className="text-base max-sm:leading-6 tracking-normal leading-tight text-zinc-600 max-md:max-w-full">
