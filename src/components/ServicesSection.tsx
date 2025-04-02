@@ -32,7 +32,7 @@ const ServicesSection: React.FC = () => {
 
   return (
     <section className="p-20 max-md:px-5">
-      <header className="flex flex-col gap-5 items-center mb-12">
+      <header className="flex flex-col min-md:gap-5 items-center mb-12">
         <h2 className="text-5xl font-bold text-center text-zinc-800 max-md:text-4xl max-sm:text-3xl">
           Our Services
         </h2>
@@ -43,7 +43,7 @@ const ServicesSection: React.FC = () => {
         </p>
       </header>
 
-      <div className="flex gap-9 max-md:flex-col">
+      <div className="flex gap-9 mb-[3px] max-md:flex-col">
         {services.map((service, index) => (
           <ServiceCard
             key={index}
