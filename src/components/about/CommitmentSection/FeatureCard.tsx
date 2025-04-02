@@ -23,9 +23,9 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
   const imageOrder = isReversed ? "order-1" : "order-2";
 
   return (
-    <div className="flex flex-wrap gap-0.5 justify-center items-center px-16 py-32 mt-20 w-full bg-white rounded-xl border border-solid border-neutral-200 shadow-[0px_2px_8px_rgba(0,0,0,0.1)] max-md:px-5 max-md:py-24 max-md:mt-10 max-md:max-w-full">
+    <div className="flex flex-wrap gap-0.5 justify-center items-center p-8 mt-20 w-full bg-white rounded-xl border border-solid border-neutral-200 shadow-[0px_2px_8px_rgba(0,0,0,0.1)] max-md:px-5 max-md:mt-10 max-md:max-w-full">
       <div
-        className={`flex flex-col flex-1 shrink self-stretch my-auto basis-40 min-w-[240px] max-md:max-w-full ${contentOrder}`}
+        className={`flex flex-col flex-1 gap-4 shrink self-stretch my-auto p-4 min-md:p-10 basis-40 min-w-[240px] max-md:max-w-full ${contentOrder}`}
       >
         <div className="flex flex-col w-full max-md:max-w-full">
           <div className="text-base max-sm:leading-6 tracking-normal leading-tight text-zinc-600 max-md:max-w-full">
@@ -40,11 +40,11 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
             </p>
           </div>
         </div>
-        <ul className="flex flex-col py-2 mt-8 w-full text-lg text-neutral-600 max-md:max-w-full">
+        <ul className="flex flex-col w-full text-lg text-neutral-600 max-md:max-w-full">
           {bulletPoints.map((point, index) => (
             <li
               key={index}
-              className="flex flex-wrap gap-4 items-center mt-4 w-full max-md:max-w-full"
+              className="flex flex-wrap gap-2 items-center w-full max-md:max-w-full"
             >
               <img
                 loading="lazy"
@@ -60,7 +60,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
         </ul>
       </div>
       <div
-        className={`flex flex-col flex-1 shrink items-start self-stretch px-20 my-auto basis-0 min-w-[240px] max-md:px-5 max-md:max-w-full ${imageOrder}`}
+        className={`flex flex-col flex-1 shrink items-start self-stretch px-0 my-auto basis-0 min-w-[240px] max-md:px-0 ${imageOrder}`}
       >
         <img
           loading="lazy"

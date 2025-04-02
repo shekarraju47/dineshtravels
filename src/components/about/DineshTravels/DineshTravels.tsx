@@ -27,8 +27,8 @@ const DineshTravels: React.FC = () => {
 
   return (
     <div className="flex flex-col max-md:mt-10 justify-center h-[919px pt-10">
-      <div className="p-5">
-        <div className="absolute inset-x-0 px-20 top-[40px] max-md:px-10 max-sm:px-5">
+      <div className="p-20 max-md:p-5">
+        <div className="absolute inset-x-0 px-20 top-[40px] max-md:px-5">
           <Navbar />
         </div>
         <Hero
