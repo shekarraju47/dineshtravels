@@ -27,19 +27,17 @@ const DineshTravels: React.FC = () => {
 
   return (
     <div className="flex flex-col max-md:mt-10 justify-center h-[919px pt-10">
-      <div className="p-20 max-md:p-5">
-        <div className="absolute inset-x-0 px-20 top-[40px] max-md:px-5">
-          <Navbar />
-        </div>
-        <Hero
-          title={heroTitle}
-          description={heroDescription}
-          imageSrc="https://cdn.builder.io/api/v1/image/assets/70aeedb357bd49288b0eebacf917c655/b53c85d1cab5280f17ec95be392f52ba41f4f66b?apiKey=70aeedb357bd49288b0eebacf917c655&"
-          imageAlt="Dinesh Travels transportation service"
-        />
-        <CommitmentSection />
 
+      <div className="absolute inset-x-0 top-[40px] px-20 max-md:px-5">
+        <Navbar />
       </div>
+      <Hero
+        title={heroTitle}
+        description={heroDescription}
+        imageSrc="https://cdn.builder.io/api/v1/image/assets/70aeedb357bd49288b0eebacf917c655/b53c85d1cab5280f17ec95be392f52ba41f4f66b?apiKey=70aeedb357bd49288b0eebacf917c655&"
+        imageAlt="Dinesh Travels transportation service"
+      />
+      <CommitmentSection />
       <ServicesSection />
       <ContactPage />
       <Footer />

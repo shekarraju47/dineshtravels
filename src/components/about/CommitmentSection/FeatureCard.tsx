@@ -44,7 +44,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
           {bulletPoints.map((point, index) => (
             <li
               key={index}
-              className="flex flex-wrap gap-2 items-center w-full max-md:max-w-full"
+              className="flex flex-wrap gap-2 items-center my-auto w-full max-md:max-w-full"
             >
               <img
                 loading="lazy"

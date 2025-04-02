@@ -14,12 +14,12 @@ const Hero: React.FC<HeroProps> = ({
   imageAlt,
 }) => {
   return (
-    <section className="flex flex-col justify-center mt-20 w-full max-md:mt-10 max-md:max-w-full">
+    <section className="flex flex-col justify-center px-20 max-md:px-5 mt-20 w-full max-md:mt-10 max-md:max-w-full">
       <div className="flex flex-col justify-center w-full text-center max-md:max-w-full">
-        <h2 className="text-5xl font-semibold leading-[58px] text-zinc-800 max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">
+        <h2 className="max-sm:text-[25px] text-4xl max-xl:text-[42px] max-xl:leading-[120%] font-semibold leading-[48px] text-zinc-800 max-md:max-w-full max-md:leading-[126%]">
           {title}
         </h2>
-        <p className="flex-1 max-sm:text-sm shrink self-stretch px-16 mt-5 w-full text-2xl max-sm:leading-6 leading-10 basis-0 text-zinc-600 max-md:px-5 max-md:max-w-full">
+        <p className="flex-1 shrink self-stretch mt-5 w-full max-sm:text-[18px] max-md:leading-[180%] leading-10 basis-0 text-zinc-600 max-md:px-5 max-md:max-w-full">
           {description}
         </p>
       </div>
