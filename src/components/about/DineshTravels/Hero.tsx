@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({
         <h2 className="max-sm:text-[24px] mt-20 text-4xl min-xl:text-[48px] min-xl:leading-[120%] font-semibold leading-[48px] text-zinc-800 max-md:max-w-full max-sm:leading-[126%]">
           {title}
         </h2>
-        <p className="flex-1 shrink self-stretch mt-5 w-full max-sm:text-[18px] max-md:leading-[180%] leading-10 basis-0 text-zinc-600 max-md:px-5 max-md:max-w-full">
+        <p className="flex-1 shrink self-stretch mt-5 w-full max-sm:text-[18px] min-md:text-[24px] max-md:leading-[180%] leading-10 basis-0 text-zinc-600 max-md:px-5 max-md:max-w-full">
           {description}
         </p>
       </div>

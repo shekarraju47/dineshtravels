@@ -53,7 +53,7 @@ export const CommitmentSection: React.FC = () => {
         <h1 className="text-5xl font-bold leading-tight text-zinc-800 max-md:max-w-full max-sm:text-xl max-sm:text-4xl pt-2" >
           Our Commitment to You
         </h1>
-        <p className="flex-1 shrink self-stretch px-20 mt-3.5 w-full text-2xl leading-8 max-sm:leading-5 max-sm:text-sm basis-0 text-zinc-600 max-md:px-5 max-md:max-w-full">
+        <p className="flex-1 shrink self-stretch px-20 mt-3.5 w-full text-[24px] leading-[34px] max-sm:leading-[32px] max-sm:text-[18px] basis-0 text-zinc-600 max-md:px-5 max-md:max-w-full">
           Every journey with Dinesh Travels is built on reliability, comfort,
           and a seamless travel experience. Here's what defines our service
         </p>

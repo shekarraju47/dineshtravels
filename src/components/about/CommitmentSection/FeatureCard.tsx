@@ -27,15 +27,15 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
       <div
         className={`flex flex-col flex-1 gap-4 shrink self-stretch py-8 my-auto min-md:p-5 basis-40 min-w-[240px] max-md:max-w-full ${contentOrder}`}
       >
-        <div className="flex flex-col w-full max-md:max-w-full">
-          <div className="text-base max-sm:leading-6 tracking-normal max-sm:text-[14px] leading-tight text-zinc-600 max-md:max-w-full">
+        <div className="flex flex-col min-md:text-left w-full max-md:max-w-full">
+          <div className="max-sm:leading-[120%] max-sm:text-[14px] leading-[120%] text-[16px] text-zinc-600 max-md:max-w-full">
             {subtitle}
           </div>
           <div className="flex flex-col justify-center mt-5 w-full max-md:max-w-full">
-            <h2 className="text-4xl font-bold leading-10 max-sm:leading-[120%] max-sm:font-bold text-zinc-800 max-sm:text-[18px]  max-md:max-w-full">
+            <h2 className="text-[40px] font-bold leading-[120%] max-sm:leading-[160%] max-sm:font-bold text-zinc-800 max-sm:text-[20px]  max-md:max-w-full">
               {title}
             </h2>
-            <p className="mt-3 text-xl leading-8 max-sm:leading-[160%] max-sm:text[16px] max-sm:font-normal max-sm:leading-6 text-zinc-600 max-md:max-w-full">
+            <p className="mt-3 text-xl leading-8 max-sm:leading-[160%] max-sm:text-[16px] max-sm:leading-6 text-zinc-600 max-md:max-w-full">
               {description}
             </p>
           </div>
@@ -44,15 +44,15 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
           {bulletPoints.map((point, index) => (
             <li
               key={index}
-              className="flex flex-wrap gap-2 items-center my-auto w-full max-md:max-w-full"
+              className="flex flex-wrap gap-2 text-start my-auto w-full max-md:max-w-full"
             >
               <img
                 loading="lazy"
                 src="https://cdn.builder.io/api/v1/image/assets/70aeedb357bd49288b0eebacf917c655/63b8e6edc13acacf7a939592a47a5a20b8b85197?apiKey=70aeedb357bd49288b0eebacf917c655&"
-                className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
+                className="object-contain shrink-0 self-stretch w-6 aspect-square"
                 alt=""
               />
-              <span className="flex-1 shrink self-stretch my-auto basis-0 max-md:max-w-full">
+              <span className="flex-1 max-sm:text[16px] shrink self-stretch my-auto basis-0 max-md:max-w-full">
                 {point}
               </span>
             </li>
