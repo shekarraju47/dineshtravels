@@ -48,7 +48,7 @@ const features: FeatureCardProps[] = [
 
 export const CommitmentSection: React.FC = () => {
   return (
-    <section style={{ padding: 0 }} className="flex flex-col bg-zinc-50 bg-opacity-80">
+    <section style={{ padding: 0 }} className="flex mt-20 flex-col bg-zinc-50 bg-opacity-80">
       <div className="flex flex-col w-full p-20 max-md:p-5 text-center max-md:max-w-full">
         <h1 className="text-5xl font-bold leading-tight text-zinc-800 max-md:max-w-full max-sm:text-xl max-sm:text-4xl pt-2" >
           Our Commitment to You
