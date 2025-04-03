@@ -6,6 +6,7 @@ import DineshTravels from './components/about/DineshTravels/DineshTravels'
 import { CommitmentSection } from './components/about/CommitmentSection/CommitmentSection'
 import Hero from './components/about/DineshTravels/Hero'
 import { Route, Routes } from 'react-router-dom'
+import Services from './components/Ourservices/Services'
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Routes>
         <Route path="/dineshtravels" element={<TravelAgencyLanding />} />
         <Route path="/dineshtravels/about" element={<DineshTravels />} />
+        <Route path='/dineshtravels/services' element={<Services />} />
       </Routes>
       {/* <TravelAgencyLanding /> */}
       {/* <DineshTravels /> */}

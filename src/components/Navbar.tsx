@@ -30,12 +30,12 @@ const Navbar: React.FC = (props) => {
     path: '/dineshtravels/about',
     className: 'text-lg font-semibold text-white text-opacity-60',
   },
-    // {
-    //   id: 3,
-    //   name: 'Our Services',
-    //   path: '/dineshtravels/services',
-    //   className: 'text-lg font-semibold text-white text-opacity-60',
-    // },
+  {
+    id: 3,
+    name: 'Our Services',
+    path: '/dineshtravels/services',
+    className: 'text-lg font-semibold text-white text-opacity-60',
+  },
     // {
     //   id: 4,
     //   name: 'Gallery',
