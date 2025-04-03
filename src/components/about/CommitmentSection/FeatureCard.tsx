@@ -28,14 +28,14 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
         className={`flex flex-col flex-1 gap-4 shrink self-stretch py-8 my-auto min-md:p-5 basis-40 min-w-[240px] max-md:max-w-full ${contentOrder}`}
       >
         <div className="flex flex-col w-full max-md:max-w-full">
-          <div className="text-base max-sm:leading-6 tracking-normal leading-tight text-zinc-600 max-md:max-w-full">
+          <div className="text-base max-sm:leading-6 tracking-normal max-sm:text-[14px] leading-tight text-zinc-600 max-md:max-w-full">
             {subtitle}
           </div>
           <div className="flex flex-col justify-center mt-5 w-full max-md:max-w-full">
-            <h2 className="text-4xl font-bold leading-10 text-zinc-800  max-md:max-w-full">
+            <h2 className="text-4xl font-bold leading-10 max-sm:leading-[120%] max-sm:font-bold text-zinc-800 max-sm:text-[18px]  max-md:max-w-full">
               {title}
             </h2>
-            <p className="mt-3 text-xl leading-8 max-sm:text-sm max-sm:leading-6 text-zinc-600 max-md:max-w-full">
+            <p className="mt-3 text-xl leading-8 max-sm:leading-[160%] max-sm:text[16px] max-sm:font-normal max-sm:leading-6 text-zinc-600 max-md:max-w-full">
               {description}
             </p>
           </div>
