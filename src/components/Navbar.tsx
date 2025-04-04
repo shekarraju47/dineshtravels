@@ -17,24 +17,25 @@ const Navbar: React.FC = (props) => {
 
   const color = IsHome('/dineshtravels/') ? 'white' : 'black';
 
+
   const NavItems = [{
     id: 1,
     name: 'Home',
     path: '/dineshtravels/',
-    className: 'text-lg font-semibold text-white text-opacity-60',
+    className: 'text-sm font-semibold text-white text-opacity-60',
     // "text-lg font-semibold"
   },
   {
     id: 2,
     name: 'About us',
     path: '/dineshtravels/about',
-    className: 'text-lg font-semibold text-white text-opacity-60',
+    className: 'text-sm font-semibold text-white text-opacity-60',
   },
   {
     id: 3,
     name: 'Our Services',
     path: '/dineshtravels/services',
-    className: 'text-lg font-semibold text-white text-opacity-60',
+    className: 'text-sm font-semibold text-white text-opacity-60',
   },
     // {
     //   id: 4,
@@ -45,10 +46,14 @@ const Navbar: React.FC = (props) => {
   ]
 
 
-
   return (
     <nav style={{ color: 'black', }} className="flex justify-between items-center h-[106px] max-sm:h-20">
-      <h1 style={{ color: `${color}` }} className="text-2xl font-bold text-white">DineshTravels!</h1>
+      <NavLink to={NavItems[0].path} className="flex items-center gap-2">
+        <h1 style={{
+          color: `${color}`,
+
+        }} className="text-2xl font-bold text-white">DineshTravels!</h1>
+      </NavLink>
 
       <div className="flex min-md:gap-3 min-lg:gap-8 min-xl:gap-12 items-center max-md:hidden">
         {NavItems.map((item) => (
@@ -56,7 +61,7 @@ const Navbar: React.FC = (props) => {
             key={item.id}
             to={item.path}
             style={{ color: `${color}` }}
-            className={` ${item.className}`}
+            className={`${current.pathname === item.path ? 'underline' : 'no-underline'} ${item.className} scroll-smooth`}
           >
             {item.name}
           </NavLink>
@@ -81,11 +86,13 @@ const Navbar: React.FC = (props) => {
                     key={item.id}
                     to={item.path}
                     style={{ color: `${color}` }}
-                    className={` ${item.className} flex`}
+                    className={`${current.pathname === item.path ? 'underline' : 'no-underline'} ${item.className} flex scroll-smooth`}
                   >
                     {item.name}
                   </NavLink>
                 ))}
+                <a style={{ color }} className={`text-sm font-semibold text-opacity-60 scroll-smooth`} href="#Home"> Get in touch</a>
+
               </DialogContent>
             </Dialog>
           </div>
