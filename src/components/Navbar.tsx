@@ -61,7 +61,7 @@ const Navbar: React.FC = (props) => {
             key={item.id}
             to={item.path}
             style={{ color: `${color}` }}
-            className={`${current.pathname === item.path ? 'underline' : 'no-underline'} ${item.className} scroll-smooth`}
+            className={`${current.pathname === item.path ? 'underline decoration-lime-600' : 'no-underline'} ${item.className} scroll-smooth`}
           >
             {item.name}
           </NavLink>
@@ -86,7 +86,7 @@ const Navbar: React.FC = (props) => {
                     key={item.id}
                     to={item.path}
                     style={{ color: `${color}` }}
-                    className={`${current.pathname === item.path ? 'underline' : 'no-underline'} ${item.className} flex scroll-smooth`}
+                    className={`${current.pathname === item.path ? 'underline decoration-lime-600' : 'no-underline'} ${item.className} flex scroll-smooth`}
                   >
                     {item.name}
                   </NavLink>
