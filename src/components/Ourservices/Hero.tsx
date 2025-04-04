@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({
     <section className="flex flex-col gap-6 items-start w-full">
       <div className="flex flex-col gap-8 justify-center items-center px-0 py-3 w-full">
         <div className="flex flex-col gap-5 items-start w-full">
-          <h2 className="w-full text-6xl font-bold tracking-tight text-center leading-[67.2px] max-md:text-5xl max-sm:text-4xl">
+          <h2 className="w-full text-6xl font-bold tracking-tight text-center text-[56px] max-sm:text-[24px] leading-[120%] max-md:text-5xl max-sm:text-4xl">
             <span className="text-zinc-800 text-opacity-90">
               {title.split(",")[0]},
             </span>
@@ -27,11 +27,11 @@ const Hero: React.FC<HeroProps> = ({
               {title.split(",")[1]}
             </span>
           </h2>
-          <p className="w-full text-2xl leading-8 text-center text-zinc-600 text-opacity-70 max-md:text-xl max-sm:text-lg">
+          <p className="w-full text-[24px] leading-[134%] text-center text-zinc-600 text-opacity-70 max-md:text-xl max-sm:text-[18px]">
             {subtitle}
           </p>
         </div>
-        <p className="flex-1 px-5 py-0 w-full text-2xl tracking-tight leading-10 text-center text-zinc-600 text-opacity-80 max-md:text-xl max-sm:text-base">
+        <p className="flex-1 px-5 py-0 w-full  max-sm:leading-[180%] text-[24px] tracking-tight leading-10 text-center text-zinc-600 text-opacity-80 max-sm:text-[18px]">
           {description}
         </p>
       </div>
@@ -39,7 +39,7 @@ const Hero: React.FC<HeroProps> = ({
         <img
           src={imageSrc}
           alt={imageAlt}
-          className="w-full h-full object-cover"
+          className="w-full h-full rounded-[12px] object-cover"
         />
       </div>
     </section>

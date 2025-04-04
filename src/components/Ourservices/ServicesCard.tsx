@@ -2,7 +2,6 @@ import React from "react";
 import Hero from '../Ourservices/Hero'
 
 const DineshTravels: React.FC = () => {
-  const menuItems = ["Home", "About us", "Our Services", "Gallery"];
   const heroProps = {
     title: "Reliable Services,Trusted by Leading Clients",
     subtitle:
@@ -24,7 +23,7 @@ const DineshTravels: React.FC = () => {
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600;700&display=swap"
         rel="stylesheet"
       />
-      <div className="flex flex-col bg-white min-h-[screen]">
+      <div className="flex flex-col mt-20 bg-white min-h-[screen]">
         <main className="flex flex-col gap-20 items-start px-20 py-16 max-md:gap-16 max-md:p-10 max-sm:gap-10 max-sm:p-5">
           {/* <Header title="DineshTravels!" menuItems={menuItems} /> */}
           <Hero {...heroProps} />

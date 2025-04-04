@@ -26,19 +26,19 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
       <div
         className={`flex flex-col flex-1 gap-8 justify-center items-start max-md:${contentOrder}`}
       >
-        <div className="flex flex-col gap-3 w-full">
-          <h2 className="text-5xl font-bold tracking-tight leading-[52.8px] text-zinc-800 text-opacity-90 max-md:text-4xl max-sm:text-3xl">
+        <div className="flex flex-col  gap-3 w-full">
+          <h2 className="text-[44px] font-bold tracking-tight leading-[120%] text-zinc-800 text-opacity-90 max-md:text-4xl max-sm:text-[24px]">
             {title}
           </h2>
-          <p className="text-2xl leading-10 text-zinc-600 text-opacity-60 max-md:text-xl max-sm:text-lg">
+          <p className="text-[24px] leading-10 max-sm:leading-[180%] text-zinc-600 text-opacity-60 max-md:text-xl max-sm:text-[18px]">
             {description}
           </p>
         </div>
-        <ul className="flex flex-col gap-5 w-full">
+        <ul className="flex flex-col min-sm:ml-5 max-sm:items-center gap-5 w-full">
           {features.map((feature, index) => (
             <li
               key={index}
-              className="text-xl leading-8 text-zinc-600 text-opacity-90 max-sm:text-base"
+              className="text-[20px] list-disc leading-[160%] text-zinc-600 text-opacity-90 max-sm:text-[18px] max-sm:leading-[150%]"
             >
               {feature}
             </li>
