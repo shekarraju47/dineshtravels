@@ -28,7 +28,7 @@ const HeroSection: React.FC = () => {
 
         <div className="flex gap-4 max-sm:flex-col ">
           <button className="px-9 py-4 text-lg max-sm:text-sm  font-semibold text-white bg-sky-600 rounded-xl w-[180px] max-sm:w-small">
-            Get in touch
+            <a href="#Home">Get in touch</a>
           </button>
           <button className="px-4 py-4 max-sm:w-small max-sm:text-sm text-lg rounded-xl border border-white border-opacity-50 text-white text-opacity-80 w-[180px]">
             Learn more
