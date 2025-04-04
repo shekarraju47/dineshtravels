@@ -25,7 +25,6 @@ function Services() {
                 <ServicesPage />
                 <LegacyOfTrust />
                 <TrustedBySection title="Trusted by" />
-
                 <TestimonialSection />
                 <ContactPage />
                 <Footer />

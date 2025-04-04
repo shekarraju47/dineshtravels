@@ -51,7 +51,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
         <RawImg
           image={imageSrc}
           altText={imageAlt}
-          className="w-full h-auto rounded-xl max-w-[377px] max-sm:max-w-full"
+          className="w-full h-auto rounded-xl mt-5 max-w-[377px] max-sm:w-[100]"
         />
       </div>
     </div>
