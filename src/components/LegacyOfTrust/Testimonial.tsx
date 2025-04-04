@@ -19,7 +19,7 @@ export const Testimonial: React.FC<TestimonialProps> = ({
       </div>
       <div className="flex flex-col flex-1 gap-12 justify-center items-center">
         <div className="flex flex-col gap-5 justify-center items-center w-full">
-          <blockquote className="min-md:text-[26px] min-xl:text-[32px] text-center min-md:leading-[140%] leading-[120%] text-zinc-800 text-opacity-90 max-sm:text-[20px]">
+          <blockquote className="text-[32px] text-center leading-[180%] text-zinc-800 text-opacity-90 max-sm:text-[20px]">
             "{quote}"
           </blockquote>
           <p className="px-3 w-full text-lg font-bold leading-7 text-end text-zinc-800 text-opacity-90 max-md:text-base max-sm:text-[16px]">
