@@ -15,7 +15,7 @@ export const Testimonial: React.FC<TestimonialProps> = ({
   return (
     <>
       <div className="flex flex-1 items-center h-[505px] max-md:h-[400px] max-sm:h-[300px]">
-        <img src={image} alt="" className="w-[1068px] h-full max-sm:rounded-[20px]  rounded-[50px] object-cover" />
+        <img src={image} alt="" className="w-[576px] h-full max-sm:rounded-[20px]  rounded-[50px] object-cover" />
       </div>
       <div className="flex flex-col flex-1 gap-12 justify-center items-center">
         <div className="flex flex-col gap-5 justify-center items-center w-full">

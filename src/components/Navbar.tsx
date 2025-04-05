@@ -13,6 +13,8 @@ const Navbar: React.FC = (props) => {
     return current.pathname === path;
   }
 
+  const classes = 'text-sm font-semibold max-md:text-[18px] text-white text-opacity-60'
+
   const [isOpen, setIsOpen] = useState(false);
 
   const color = IsHome('/dineshtravels/') ? 'white' : 'black';
@@ -22,20 +24,20 @@ const Navbar: React.FC = (props) => {
     id: 1,
     name: 'Home',
     path: '/dineshtravels/',
-    className: 'text-sm font-semibold text-white text-opacity-60',
+    className: { classes },
     // "text-lg font-semibold"
   },
   {
     id: 2,
     name: 'About us',
     path: '/dineshtravels/about',
-    className: 'text-sm font-semibold text-white text-opacity-60',
+    className: { classes },
   },
   {
     id: 3,
     name: 'Our Services',
     path: '/dineshtravels/services',
-    className: 'text-sm font-semibold text-white text-opacity-60',
+    className: { classes },
   },
     // {
     //   id: 4,
@@ -61,7 +63,7 @@ const Navbar: React.FC = (props) => {
             key={item.id}
             to={item.path}
             style={{ color: `${color}` }}
-            className={`${current.pathname === item.path ? 'underline decoration-lime-600' : 'no-underline'} ${item.className} scroll-smooth`}
+            className={`${current.pathname === item.path ? 'underline decoration-lime-600/100' : 'no-underline'} ${item.className} scroll-smooth`}
           >
             {item.name}
           </NavLink>
