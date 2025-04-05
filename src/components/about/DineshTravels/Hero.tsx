@@ -27,7 +27,12 @@ const Hero: React.FC<HeroProps> = ({
         <img
           src={imageSrc}
           alt={imageAlt}
-          className="object-contain w-full rounded-xl aspect-[3.45] max-md:max-w-full"
+          className="hidden min-md:block object-contain w-full rounded-xl aspect-[3.45] max-md:max-w-full"
+        />
+        <img
+          src='./AboutHero.jpeg'
+          alt={imageAlt}
+          className="hidden max-md:block object-contain w-[1078px] rounded-xl max-md:max-w-full"
         />
       </div>
     </section>

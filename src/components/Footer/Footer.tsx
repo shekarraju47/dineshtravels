@@ -1,4 +1,4 @@
-import { TwitterIcon, Instagram, LinkedinIcon, MailIcon, PhoneCallIcon } from 'lucide-react';
+import { TwitterIcon, Instagram, LinkedinIcon, MailIcon, PhoneCallIcon, MessageSquare } from 'lucide-react';
 
 
 
@@ -29,6 +29,12 @@ const Footer = () => {
                         <LinkedinIcon className="w-6 h-6 text-gray-400 hover:text-gray-300" />
                         <a href="#" className="text-gray-400 hover:text-gray-300">LinkedIn</a>
                     </div>
+                    <div className="flex flex-col items-center justify-center">
+
+                        <MessageSquare className="w-6 h-6 text-gray-400 hover:text-gray-300" />
+                        <a href="https://wa.me/9912345729" target='_blank' className="text-gray-400 hover:text-gray-300">
+                            WhatsApp</a>
+                    </div>
                 </div>
                 <div className='flex justify-around max-sm:flex-col gap-4 items-center mb-4'>
 
@@ -41,7 +47,6 @@ const Footer = () => {
                         <PhoneCallIcon className="w-6 h-6 text-gray-400 hover:text-gray-300" />
                         +91 9912345729</a>
                     {/* <a href="tel:+919948599101" className="text-gray-400 hover:text-gray-300 ml-4">+91 9948599101</a> */}
-
                 </div>
 
             </div>
