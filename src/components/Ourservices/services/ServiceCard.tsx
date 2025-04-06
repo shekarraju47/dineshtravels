@@ -26,7 +26,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
       <div
         className={`flex flex-col flex-1 gap-8 justify-center items-start max-md:${contentOrder}`}
       >
-        <div className="flex flex-col  gap-3 w-full">
+        <div className="flex flex-col max-sm:text-center gap-3 w-full">
           <h2 className="text-[44px] font-bold tracking-tight leading-[120%] text-zinc-800 text-opacity-90 max-md:text-4xl max-sm:text-[24px]">
             {title}
           </h2>

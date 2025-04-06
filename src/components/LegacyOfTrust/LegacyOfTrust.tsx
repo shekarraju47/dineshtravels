@@ -16,7 +16,7 @@ const testimonials: TestimonialProps[] = [
 const LegacyOfTrust: React.FC = () => {
   return (
     <div className="flex flex-col items-center p-10 w-full bg-white max-md:px-16 max-sm:px-5 max-sm:py-16">
-      <div className="flex flex-col gap-5 justify-center items-center w-full">
+      <div className="flex flex-col max-sm:text-center gap-5 justify-center items-center w-full">
         <h1 className="text-[48px] font-bold max-sm:leading-[130%] text-center leading-[57.6px] text-zinc-800 max-md:text-4xl max-sm:text-[24px]">
           "A Legacy of Trust &amp; Excellence"
         </h1>

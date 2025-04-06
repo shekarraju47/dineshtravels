@@ -19,7 +19,7 @@ const Hero: React.FC<HeroProps> = ({
     <section className="flex flex-col gap-6 items-start w-full">
       <div className="flex flex-col gap-8 justify-center items-center px-0 py-3 w-full">
         <div className="flex flex-col gap-5 items-start w-full">
-          <h2 className="w-full text-6xl font-bold tracking-tight text-center text-[56px] max-sm:text-[24px] leading-[120%] max-md:text-5xl max-sm:text-4xl">
+          <h2 className="w-full text-6xl font-bold text-center text-[56px] max-sm:text-[24px] leading-[120%] max-md:text-5xl max-sm:text-4xl">
             <span className="text-zinc-800 text-opacity-90">
               {title.split(",")[0]},
             </span>
