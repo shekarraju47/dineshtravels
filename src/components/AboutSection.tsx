@@ -10,9 +10,9 @@ const AboutSection: React.FC = () => {
           className="w-[100vw] h-[590px] max-sm:h-[350px] rounded-[20px] object-cover"
         />
       </div>
-      <div className="flex flex-col flex-1 gap-8">
+      <div className="flex flex-col flex-1 mt-4 gap-8">
         <div className="flex flex-col max-sm:text-center max-sm:gap-1 gap-5">
-          <h2 className="text-5xl font-bold leading-[50.6px] text-zinc-800 max-md:text-4xl max-sm:text-3xl">
+          <h2 className="text-5xl font-bold leading-[50.6px] max-sm:leading-[24px] mb-2 text-zinc-800 max-md:text-4xl max-sm:text-[24px]">
             Experience Travel, The Dinesh Way
           </h2>
           <p className="text-2xl leading-10 text-zinc-600 text-opacity-80 max-md:text-xl max-sm:text-lg">

@@ -20,11 +20,11 @@ const JourneyContent = () => {
   return (
     <article className="flex-1 shrink self-stretch my-auto basis-40 max-md:max-w-full">
       <div className="w-full max-sm:text-center max-md:max-w-full">
-        <h2 className="text-5xl font-bold leading-[58px] text-zinc-800 max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">
+        <h2 className="text-5xl font-bold leading-[58px] max-sm:text-[24px] text-zinc-800 max-md:max-w-full mb-2 max-sm:leading-[120%]">
           Driven by Trust, <br />
           Powered by Service
         </h2>
-        <p className="flex-1 shrink self-stretch w-full max-md:text-xl max-sm:leading-[2] max-sm:text-lg leading-10 basis-0 text-zinc-600 max-md:max-w-full">
+        <p className="flex-1 shrink self-stretch w-full text-[24px] max-sm:leading-[2] max-sm:text-[18px] leading-10 basis-0 text-zinc-600 max-md:max-w-full">
           At Dinesh Travels, we have been redefining road transportation with a
           commitment to safety, comfort, and reliability. With over a decade of
           experience, we've built a strong reputation in the industry, providing

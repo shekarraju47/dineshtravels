@@ -40,7 +40,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
             </p>
           </div>
         </div>
-        <ul className="flex flex-col w-full text-lg text-neutral-600 max-md:max-w-full">
+        <ul className="flex flex-col w-full text-[18px] max-sm:text-[16px] text-neutral-600 max-md:max-w-full">
           {bulletPoints.map((point, index) => (
             <li
               key={index}
