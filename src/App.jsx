@@ -1,4 +1,3 @@
-import { useState } from 'react'
 import TravelAgencyLanding from './components/TravelAgencyLanding'
 import './App.css'
 import DineshTravels from './components/about/DineshTravels/DineshTravels'

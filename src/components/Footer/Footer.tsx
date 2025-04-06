@@ -32,7 +32,7 @@ const Footer = () => {
                     <div className="flex flex-col items-center justify-center">
 
                         <MessageSquare className="w-6 h-6 text-gray-400 hover:text-gray-300" />
-                        <a href="https://wa.me/9912345729" target='_blank' className="text-gray-400 hover:text-gray-300">
+                        <a href="https://wa.me/+919912345729" target='_blank' className="text-gray-400 hover:text-gray-300">
                             WhatsApp</a>
                     </div>
                 </div>
