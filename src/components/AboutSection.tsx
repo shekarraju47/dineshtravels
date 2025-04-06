@@ -11,7 +11,7 @@ const AboutSection: React.FC = () => {
         />
       </div>
       <div className="flex flex-col flex-1 gap-8">
-        <div className="flex flex-col max-sm:gap-1 gap-5">
+        <div className="flex flex-col max-sm:text-center max-sm:gap-1 gap-5">
           <h2 className="text-5xl font-bold leading-[50.6px] text-zinc-800 max-md:text-4xl max-sm:text-3xl">
             Experience Travel, The Dinesh Way
           </h2>

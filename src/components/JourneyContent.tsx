@@ -19,7 +19,7 @@ const JourneyContent = () => {
 
   return (
     <article className="flex-1 shrink self-stretch my-auto basis-40 max-md:max-w-full">
-      <div className="w-full max-md:max-w-full">
+      <div className="w-full max-sm:text-center max-md:max-w-full">
         <h2 className="text-5xl font-bold leading-[58px] text-zinc-800 max-md:max-w-full max-md:text-4xl max-md:leading-[54px]">
           Driven by Trust, <br />
           Powered by Service
