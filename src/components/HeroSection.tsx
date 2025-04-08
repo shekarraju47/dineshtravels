@@ -16,9 +16,9 @@ const HeroSection: React.FC = () => {
         <Navbar />
       </div>
 
-      <div className="absolute top-1/4 p-20 max-md:p-5 max-sm:top-1/3 max-w-screen-sm">
+      <div className="absolute top-1/4 pl-20 enter max-md:p-5 max-sm:top-1/3 max-w-screen-sm">
         <div className="flex flex-col gap-6 mb-12 max-sm:mb-5 ">
-          <h2 className="text-6xl font-bold text-white max-sm:w-70 leading-[59.4px] max-md:text-5xl max-sm:text-4xl max-sm:leading-none">
+          <h2 className="text-6xl font-bold text-white max-sm:w-70 leading-[120%] max-md:text-5xl max-sm:text-4xl max-sm:leading-none">
             Seamless Travel, Exceptional Service
           </h2>
           <p className="text-2xl leading-8 text-zinc-100 text-opacity-80 max-md:text-xl max-sm:text-lg max-sm:w-60">
