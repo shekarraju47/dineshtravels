@@ -17,34 +17,34 @@ const Navbar: React.FC = (props) => {
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const color = IsHome('/dineshtravels/') ? 'white' : 'black';
+  const color = IsHome('/') ? 'white' : 'black';
 
 
   const NavItems = [{
     id: 1,
     name: 'Home',
-    path: '/dineshtravels/',
+    path: '/',
     className: { classes },
     // "text-lg font-semibold"
   },
   {
     id: 2,
     name: 'About us',
-    path: '/dineshtravels/about',
+    path: '/about',
     className: { classes },
   },
   {
     id: 3,
     name: 'Our Services',
-    path: '/dineshtravels/services',
+    path: '/services',
     className: { classes },
   },
-    // {
-    //   id: 4,
-    //   name: 'Gallery',
-    //   path: '/dineshtravels/gallery',
-    //   className: 'text-lg font-semibold text-white text-opacity-60',
-    // }
+    {
+      id: 4,
+      name: 'Gallery',
+      path: '/gallery',
+      className: { classes },
+    }
   ]
 
 
