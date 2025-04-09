@@ -8,6 +8,7 @@ import GalleryPage from '../src/components/Gallery/GalleryPage/GalleryPage'
 function App() {
   return (
     <>
+
       <Routes>
         <Route exact path="/" element={<TravelAgencyLanding />} />
         <Route exact path="/about" element={<DineshTravels />} />
