@@ -18,11 +18,12 @@
   }
   
   .marquee-text-track {
+    /* min-height: 100dvh; */
     display: flex;
-    /* padding-left: 4.8rem; */
+    padding-left: 4.8rem;
     gap: 1.8rem;
-    width: max-content;
-    animation: marquee-move-text var(--speed, 4s) linear infinite
+    /* width: max-content; */
+    animation: marquee-move-text var(--speed, 6s) linear infinite
       var(--direction, forwards);
   }
   
@@ -35,8 +36,17 @@
   
   @keyframes marquee-move-text {
     to {
-      transform: translateX(-50%);
+      transform: translateX(-250%);
     }
   }
   
   
+  @media screen and (min-width: 768px) {
+    @keyframes marquee-move-text {
+      to {
+        transform: translateX(-100%);
+      }
+      
+    }
+    
+  }
