@@ -33,10 +33,10 @@ const ServicesSection: React.FC = () => {
   return (
     <section className="p-20 max-md:px-5">
       <header className="flex flex-col min-md:gap-5 items-center mb-12">
-        <h2 className="text-5xl font-bold text-center text-zinc-800 max-md:text-4xl max-sm:text-3xl">
+        <h2 className="text-[48px] leading-[120%] text-[#333333] font-bold text-center text-[Montserrat] max-sm:text-[18px]">
           Our Services
         </h2>
-        <p className="text-2xl max-sm:p-2 leading-9 text-center max-w-[800px] text-zinc-600 text-opacity-80 max-md:text-xl max-sm:text-lg">
+        <p className="text-[24px] leading-[150%] max-sm:leading-[160%] text-center max-w-[1300px] text-[Open Sans] text-[#5C5C5CCC] opacity-[80%] max-sm:text-[16px]">
           At Dinesh Travels, we provide secure and efficient transport for
           business professionals. Our curated tour packages offer unforgettable
           experiences for both leisure and corporate retreats.

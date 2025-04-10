@@ -1,7 +1,7 @@
 import React from "react";
 
 
-const clsname = "w-[100%] h-[80px] max-sm:h-[30px] max-md:h-[40px] max-sm:rounded-[1px] min-md:rounded-[20px] object-cover max-sm:p-0 max-md:p-0 p-5"
+const clsname = "w-[100%] h-[100px] max-sm:h-[30px] max-md:h-[40px] max-sm:rounded-[1px] min-md:rounded-[20px] object-cover max-sm:p-0 max-md:p-0 p-8"
 
 const imgs = [
   {

@@ -12,10 +12,10 @@ const AboutSection: React.FC = () => {
       </div>
       <div className="flex flex-col flex-1 mt-4 gap-8">
         <div className="flex flex-col max-sm:text-center max-sm:gap-1 gap-5">
-          <h2 className="text-5xl font-bold leading-[50.6px] max-sm:leading-[24px] mb-2 text-zinc-800 max-md:text-4xl max-sm:text-[24px]">
+          <h2 className="text-[48px] font-bold text-[#333333] leading-[120%] mb-2 text-[Montserrat] max-md:text-4xl max-sm:text-[24px]">
             Experience Travel, The Dinesh Way
           </h2>
-          <p className="text-2xl leading-10 text-zinc-600 text-opacity-80 max-md:text-xl max-sm:text-lg">
+          <p className="text-2xl leading-10 text-[#5C5C5CCC] font-[400] max-sm:opacity-[80%] max-md:text-xl max-sm:text-lg">
             Welcome to Dinesh Travels, Hyderabad's trusted road transport
             service since 2007. From corporate travel to family getaways, we
             ensure safe, comfortable, and reliable journeys with our modern

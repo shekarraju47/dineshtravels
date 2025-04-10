@@ -13,11 +13,11 @@ const Navbar: React.FC = (props) => {
     return current.pathname === path;
   }
 
-  const classes = 'text-sm font-semibold max-md:text-[18px] text-white text-opacity-60'
+  const classes = 'text-sm font-semibold max-md:text-[18px] min-xl:text-[20px] text-white'
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const color = IsHome('/') ? 'white' : 'black';
+  const color = IsHome('/') ? 'white' : '#333333';
 
 
   const NavItems = [{
@@ -54,7 +54,7 @@ const Navbar: React.FC = (props) => {
         <h1 style={{
           color: `${color}`,
 
-        }} className="text-2xl font-bold text-white">DineshTravels!</h1>
+        }} className="text-[24px] max-sm:text-[16px] min-xl:text-[28px] font-[Montserrat] font-bold text-white">DineshTravels!</h1>
       </NavLink>
 
       <div className="flex min-md:gap-3 min-lg:gap-8 min-xl:gap-12 items-center max-md:hidden">
@@ -63,7 +63,7 @@ const Navbar: React.FC = (props) => {
             key={item.id}
             to={item.path}
             style={{ color: `${color}` }}
-            className={`${current.pathname === item.path ? 'underline decoration-lime-600/100' : 'no-underline'} ${item.className} scroll-smooth`}
+            className={`${current.pathname === item.path ? 'underline font-semibold decoration-lime-600/100 opacity[50%]' : 'no-underline font-semibold opacity-[60%]'} ${item.className} scroll-smooth`}
           >
             {item.name}
           </NavLink>
@@ -71,7 +71,7 @@ const Navbar: React.FC = (props) => {
       </div>
 
       <div className="flex gap-6 items-center ">
-        <button className="px-9 py-4 text-lg font-semibold text-white bg-sky-600 rounded-xl  max-sm:hidden">
+        <button className="px-9 py-4 text-lg font-[Open Sans] text-white bg-sky-600 rounded-xl  max-sm:hidden">
           <a className="scroll-smooth" href="#Home"> Get in touch</a>
         </button>
 
