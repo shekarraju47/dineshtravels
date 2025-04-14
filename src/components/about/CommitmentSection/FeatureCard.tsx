@@ -66,7 +66,7 @@ export const FeatureCard: React.FC<FeatureCardProps> = ({
           loading="lazy"
           src={imageSrc}
           alt={imageAlt}
-          className="object-contain w-full rounded-xl aspect-[0.79]"
+          className="w-[1080px] h-auto min-md:h-[426px] min-md:w-full min-md:object-cover rounded-xl mt-5"
         />
       </div>
     </div>

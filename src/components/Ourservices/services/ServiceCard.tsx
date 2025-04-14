@@ -27,10 +27,10 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
         className={`flex flex-col flex-1 gap-8 justify-center items-start max-md:${contentOrder}`}
       >
         <div className="flex flex-col max-sm:text-center gap-3 w-full">
-          <h2 className="text-[44px] font-bold tracking-tight leading-[120%] text-zinc-800 text-opacity-90 max-md:text-4xl max-sm:text-[24px]">
+          <h2 className="text-[44px] font-bold text-[#333333E5] leading-[120%] text-[Montserrat] text-opacity-[90%] max-md:text-4xl max-sm:text-[24px]">
             {title}
           </h2>
-          <p className="text-[24px] leading-10 max-sm:leading-[180%] text-zinc-600 text-opacity-60 max-md:text-xl max-sm:text-[18px]">
+          <p className="text-[24px] leading-[180%] text-[Open Sans] text-[#5C5C5C99] text-opacity-60 max-md:text-xl max-sm:text-[18px]">
             {description}
           </p>
         </div>
@@ -38,7 +38,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
           {features.map((feature, index) => (
             <li
               key={index}
-              className="text-[20px] list-disc leading-[160%] text-zinc-600 text-opacity-90 max-sm:text-[18px] max-sm:leading-[150%]"
+              className="text-[20px] list-disc leading-[160%] text-[Open Sans] text-[#5C5C5CF2] text-opacity-[95%] max-sm:text-[18px] max-sm:leading-[140%]"
             >
               {feature}
             </li>
@@ -51,7 +51,7 @@ export const ServiceCard: React.FC<ServiceCardProps> = ({
         <RawImg
           image={imageSrc}
           altText={imageAlt}
-          className="w-[1080px] h-auto rounded-xl mt-5"
+          className="w-[1080px] h-[446px] object-cover min-md:h-[576px] min-md:w-full min-md:object-cover rounded-xl mt-5"
         />
       </div>
     </div>

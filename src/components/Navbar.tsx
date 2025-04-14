@@ -13,11 +13,11 @@ const Navbar: React.FC = (props) => {
     return current.pathname === path;
   }
 
-  const classes = 'text-sm font-semibold max-md:text-[18px] min-xl:text-[20px] text-white'
+  const classes = 'text-sm font-semibold max-md:text-[18px] min-xl:text-[20px] text-[#FFFFFF]'
 
   const [isOpen, setIsOpen] = useState(false);
 
-  const color = IsHome('/') ? 'white' : '#333333';
+  const color = IsHome('/') ? '#FFFFFF' : '#333333';
 
 
   const NavItems = [{
@@ -49,12 +49,12 @@ const Navbar: React.FC = (props) => {
 
 
   return (
-    <nav style={{ color: 'black', }} className="flex justify-between items-center h-[106px] max-sm:h-20">
+    <nav style={{ color: '#333333', }} className="flex justify-between items-center h-[106px] max-sm:h-20">
       <NavLink to={NavItems[0].path} className="flex items-center gap-2">
         <h1 style={{
           color: `${color}`,
 
-        }} className="text-[24px] max-sm:text-[16px] min-xl:text-[28px] font-[Montserrat] font-bold text-white">DineshTravels!</h1>
+        }} className="text-[24px] max-sm:text-[16px] min-xl:text-[28px] font-[Montserrat] font-bold">DineshTravels!</h1>
       </NavLink>
 
       <div className="flex min-md:gap-3 min-lg:gap-8 min-xl:gap-12 items-center max-md:hidden">
