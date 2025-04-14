@@ -52,6 +52,12 @@ const imgs = [
     src: "./annora.png",
     alt: "Experience Travel",
     className: clsname,
+  },
+  {
+    name: 'isb',
+    src: "./isb.png",
+    alt: "Experience Travel",
+    className: clsname,
   }
 
 ]
