@@ -10,11 +10,11 @@ const StatisticItem: React.FC<StatisticItemProps> = ({
   description,
 }) => {
   return (
-    <article className="flex-1 shrink self-stretch basis-0">
-      <h3 className="text-2xl font-bold leading-tight text-neutral-800">
+    <article className="flex-1 shrink max-sm:text-center self-stretch basis-0">
+      <h3 className="max-sm:text-[18px] text-[24px] font-bold leading-[130%] text-[#212121] text-[Montserrat]">
         {number}
       </h3>
-      <p className="mt-1 text-lg max-sm:text-[18px] leading-7 opacity-[75%] text-neutral-800">
+      <p className="mt-1 text-lg font-[400] max-sm:text-[15px] leading-[150%] text-[#212121BF] opacity-[75%] text-[Open Sans]">
         {description.split("\n").map((line, i) => (
           <React.Fragment key={i}>
             {line}
