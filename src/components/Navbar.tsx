@@ -2,7 +2,7 @@
 import * as React from "react";
 import { NavLink, useLocation } from "react-router-dom";
 import { useState } from "react";
-// import { Button } from '@radix-ui/react-dialog'
+import { motion } from "framer-motion";
 import { Dialog, DialogContent, DialogTitle, } from "@radix-ui/react-dialog"
 import { Menu } from "lucide-react";
 
@@ -39,17 +39,21 @@ const Navbar: React.FC = (props) => {
     path: '/services',
     className: { classes },
   },
-    {
-      id: 4,
-      name: 'Gallery',
-      path: '/gallery',
-      className: { classes },
-    }
+  {
+    id: 4,
+    name: 'Gallery',
+    path: '/gallery',
+    className: { classes },
+  }
   ]
 
 
   return (
-    <nav style={{ color: '#333333', }} className="flex justify-between items-center h-[106px] max-sm:h-20">
+    <motion.nav
+      initial={{ y: 500, opacity: 0 }}
+      animate={{ y: 0, opacity: 1, }}
+      transition={{ duration: 1, blur: 0.5 }}
+      style={{ color: '#333333', }} className="flex justify-between items-center h-[106px] max-sm:h-20">
       <NavLink to={NavItems[0].path} className="flex items-center gap-2">
         <h1 style={{
           color: `${color}`,
@@ -101,7 +105,7 @@ const Navbar: React.FC = (props) => {
 
         </button>
       </div>
-    </nav>
+    </motion.nav>
   );
 };
 
