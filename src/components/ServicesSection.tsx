@@ -33,7 +33,7 @@ const ServicesSection: React.FC = () => {
   return (
     <section className="p-20 max-md:px-5">
       <header className="flex flex-col min-md:gap-5 items-center mb-12">
-        <h2 className="text-[48px] leading-[120%] text-[#333333] font-bold text-center text-[Montserrat] max-sm:text-[18px]">
+        <h2 className="text-[48px] leading-[120%] text-[#333333] font-bold text-center mb-3 text-[Montserrat] max-sm:text-[18px]">
           Our Services
         </h2>
         <p className="text-[24px] leading-[150%] max-sm:leading-[160%] text-center max-w-[1300px] text-[Open Sans] text-[#5C5C5CCC] opacity-[80%] max-sm:text-[16px]">
