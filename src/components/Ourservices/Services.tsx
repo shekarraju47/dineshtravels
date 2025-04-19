@@ -1,9 +1,6 @@
 import React from 'react'
-import HeroSection from '../HeroSection'
-import ServicesSection from '../ServicesSection'
-import AboutSection from '../AboutSection'
+import { motion } from 'framer-motion'
 import TrustedBySection from '../TrustedBySection/TrustedBySection'
-import Journey from '../Journey'
 import TestimonialSection from '../TestimonialSection'
 import ContactPage from '../ContactForm/ContactPage'
 import Footer from '../Footer/Footer'
@@ -17,7 +14,11 @@ function Services() {
     return (
         <>
 
-            <main className="flex flex-col max-md:mt-10 justify-center h-[919px pt-10">
+            <motion.main
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+                transition={{ duration: 2 }}
+                className="flex flex-col max-md:mt-10 justify-center h-[919px pt-10">
                 <div className="absolute inset-x-0 top-[40px] px-20 max-md:px-5">
                     <Navbar />
                 </div>
@@ -28,7 +29,7 @@ function Services() {
                 <TestimonialSection />
                 <ContactPage />
                 <Footer />
-            </main>
+            </motion.main>
         </>
     )
 }

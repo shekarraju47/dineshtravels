@@ -1,11 +1,16 @@
 import React from "react";
 import CategoryFilter from "./CategoryFilter";
 import ImageGrid from "./ImageGrid";
+import { motion } from "framer-motion";
 
 const GallerySection: React.FC = () => {
   return (
     <div className="flex flex-col gap-20 mt-10 justify-center items-center w-full max-md:gap-16 max-sm:gap-10">
-      <div className="flex flex-col gap-5 justify-center items-center w-full">
+      <motion.div
+        initial={{ y: 150, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1 }}
+        className="flex flex-col gap-5 justify-center items-center w-full">
         <h1 className="text-[56px] font-bold text-center leading-[120%] max-sm:text-[24px]">
           <span className="text-zinc-800 text-opacity-90">
             More Than A Team—
@@ -18,7 +23,7 @@ const GallerySection: React.FC = () => {
           Take A Closer Look At The Buses And Drivers That Make Every Journey
           Unforgettable.
         </p>
-      </div>
+      </motion.div>
       <div className="flex flex-col gap-14 items-start w-full max-md:gap-10 max-sm:gap-8">
         <CategoryFilter />
         <ImageGrid />

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 interface CategoryButtonProps {
   label: string;
@@ -23,7 +24,11 @@ const CategoryButton: React.FC<CategoryButtonProps> = ({ label, isActive }) => {
 
 const CategoryFilter: React.FC = () => {
   return (
-    <div className="flex justify-between items-center w-full max-sm:flex-col max-sm:gap-5">
+    <motion.div
+      initial={{ y: 150, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1.5 }}
+      className="flex justify-between items-center w-full max-sm:flex-col max-sm:gap-5">
       <div className="text-lg underline text-zinc-800">Categories </div>
       <div className="flex gap-5 items-center max-sm:flex-wrap max-sm:justify-center">
         <CategoryButton label="All" isActive={true} />
@@ -31,7 +36,7 @@ const CategoryFilter: React.FC = () => {
         <CategoryButton label="Staff" isActive={false} />
         <CategoryButton label="Office" isActive={false} />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

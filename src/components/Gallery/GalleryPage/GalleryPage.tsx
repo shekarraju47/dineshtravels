@@ -21,7 +21,6 @@ const GalleryPage: React.FC = () => {
       <div className="flex flex-col items-center mt-20 w-full ">
 
         <div className="flex flex-col gap-24 justify-center items-center p-20 w-full max-md:gap-16 max-md:px-10 max-sm:gap-10 max-sm:px-5">
-
           <GallerySection />
           <Pagination />
         </div>

@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 type HeroProps = {
   title: string;
@@ -16,7 +17,11 @@ const Hero: React.FC<HeroProps> = ({
   imageAlt,
 }) => {
   return (
-    <section className="flex flex-col gap-6 items-start w-full">
+    <motion.section
+      initial={{ y: 150, opacity: 0 }}
+      animate={{ y: 0, opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="flex flex-col gap-6 items-start w-full">
       <div className="flex flex-col gap-8 justify-center items-center px-0 py-3 w-full">
         <div className="flex flex-col gap-5 items-start w-full">
           <h2 className="w-full text-6xl font-bold text-center text-[56px] max-sm:text-[24px] leading-[120%] max-md:text-5xl max-sm:text-4xl">
@@ -35,14 +40,19 @@ const Hero: React.FC<HeroProps> = ({
           {description}
         </p>
       </div>
-      <div className="w-full h-[309px] max-md:h-[250px] max-sm:h-[200px]">
+      <motion.div
+        initial={{ y: 150, opacity: 0 }}
+        animate={{ y: 0, opacity: 1 }}
+        transition={{ duration: 1.5 }}
+
+        className="w-full h-[309px] max-md:h-[250px] max-sm:h-[200px]">
         <img
           src={imageSrc}
           alt={imageAlt}
           className="w-full h-full rounded-[12px] object-cover"
         />
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 };
 
