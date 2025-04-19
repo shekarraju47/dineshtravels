@@ -57,7 +57,7 @@ const Image: React.FC<ImageProps> = ({ src, alt }) => {
     zoomImage.appendChild(imgElement);
     zoomImage.appendChild(closeButton);
     document.body.appendChild(zoomImage);
-    console.log("Selected image source:", src);
+    // console.log("Selected image source:", src);
   }
 
   return <motion.img onClick={() => SelectImg(src)}
