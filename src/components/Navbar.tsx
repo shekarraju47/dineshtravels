@@ -81,23 +81,23 @@ const Navbar: React.FC = (props) => {
 
         <button className="hidden max-md:block" aria-label="Menu">
 
-          <div className="flex items-center justify-center h-screen">
+          <div className="flex items-center justify-center bg-blurred-500 rounded-[6px] border-none bg-black/20 backdrop-blur-sm shadow-md shadow-black/20">
             <button className="ghost-button" onClick={() => setIsOpen(true)}>
-              {!isOpen && <Menu style={{ color: `${color}` }} className="w-6 h-6 border-none" />}
+              {!isOpen && <Menu style={{ color: `${color}` }} className="w-6 h-6 border-none " />}
             </button>
             <Dialog open={isOpen} onOpenChange={setIsOpen}>
-              <DialogContent className="p-5 border-none">
+              <DialogContent className="p-3 border-none">
                 {NavItems.map((item) => (
                   <NavLink
                     key={item.id}
                     to={item.path}
                     style={{ color: `${color}` }}
-                    className={`${current.pathname === item.path ? 'underline decoration-lime-600' : 'no-underline'} ${item.className} flex scroll-smooth`}
+                    className= {`${current.pathname === item.path ? 'underline decoration-lime-600' : 'no-underline'} ${item.className} flex scroll-smooth gap-2 items-center text-sm font-semibold text-opacity-60`}
                   >
                     {item.name}
                   </NavLink>
                 ))}
-                <a style={{ color }} className={`text-sm font-semibold text-opacity-60 scroll-smooth`} href="#Home"> Get in touch</a>
+                {/* <a style={{ color }} className={`text-sm font-semibold text-opacity-60 scroll-smooth`} href="#Home"> Get in touch</a> */}
 
               </DialogContent>
             </Dialog>
