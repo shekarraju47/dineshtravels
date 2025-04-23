@@ -14,8 +14,7 @@ const HeroSection: React.FC = () => {
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/776b7d8aaea88d1c8abf4aa39d3403d7b8b6ca3f"
         alt="Hero background"
         className="w-full h-full object-cover"
-      />
-      
+      />      
       <div className="absolute inset-0 bg-opacity-40" />
       <div className="fixed bottom-10 right-10">
         <a href="https://wa.me/+919912345729" target='_blank'>
