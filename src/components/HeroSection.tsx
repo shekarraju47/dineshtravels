@@ -9,12 +9,19 @@ const HeroSection: React.FC = () => {
       animate={{ opacity: 1 }}
       transition={{ duration: 1.5 }}
       className="relative w-full max-sm:h-[600px] max-md:h-[600px] max-2xl:h-[678px] h-[919px]">
+
       <img
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/776b7d8aaea88d1c8abf4aa39d3403d7b8b6ca3f"
         alt="Hero background"
         className="w-full h-full object-cover"
       />
+      
       <div className="absolute inset-0 bg-opacity-40" />
+      <div className="fixed bottom-10 right-10">
+        <a href="https://wa.me/+919912345729" target='_blank'>
+          <img className='w-15' src="Whatapp.png" alt="whatapplogo" />
+        </a>
+      </div>
 
       <div className="absolute inset-x-0 px-20 top-[40px] max-md:px-5">
         <Navbar />
@@ -45,7 +52,6 @@ const HeroSection: React.FC = () => {
           className="flex gap-4 max-sm:flex-col ">
           <button className="px-9 py-4 text-lg max-sm:text-sm  font-semibold text-white bg-sky-600 rounded-xl w-[190px] max-sm:w-small">
             <a href="#Home">  <span className="arrow" > {">"} </span>Get in touch</a>
-
           </button>
           <button className="px-4 py-4 max-sm:w-small max-sm:text-sm text-lg rounded-xl border border-white border-opacity-50 text-white text-opacity-80 w-[180px]">
             Learn more

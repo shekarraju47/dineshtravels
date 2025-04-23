@@ -8,7 +8,11 @@ import GalleryPage from '../src/components/Gallery/GalleryPage/GalleryPage'
 function App() {
   return (
     <>
-
+      <div className="fixed bottom-10 right-10">
+        <a href="https://wa.me/+919912345729" target='_blank'>
+          <img className='w-15' src="Whatapp.png" alt="whatapplogo" />
+        </a>
+      </div>
       <Routes>
         <Route exact path="/" element={<TravelAgencyLanding />} />
         <Route exact path="/about" element={<DineshTravels />} />
