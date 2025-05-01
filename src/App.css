@@ -51,9 +51,6 @@ button:focus {
 
 
 
-.arrow:hover {
-  display: hidden;
-}
 
 @keyframes marquee-move-text {
   to {

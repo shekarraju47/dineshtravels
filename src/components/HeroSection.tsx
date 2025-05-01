@@ -14,11 +14,11 @@ const HeroSection: React.FC = () => {
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/776b7d8aaea88d1c8abf4aa39d3403d7b8b6ca3f"
         alt="Hero background"
         className="w-full h-full object-cover"
-      />      
+      />
       <div className="absolute inset-0 bg-opacity-40" />
-      <div className="fixed bottom-10 right-10">
+      <div className="fixed bottom-10 right-10 max-sm:bottom-5 max-sm:right-5">
         <a href="https://wa.me/+919912345729" target='_blank'>
-          <img className='w-15' src="Whatapp.png" alt="whatapplogo" />
+          <img className='w-15 max-sm:w-10' src="Whatapp.png" alt="whatapplogo" />
         </a>
       </div>
 
@@ -49,8 +49,15 @@ const HeroSection: React.FC = () => {
           animate={{ y: 0, opacity: 1 }}
           transition={{ duration: 1.5 }}
           className="flex gap-4 max-sm:flex-col ">
-          <button className="px-9 py-4 text-lg max-sm:text-sm  font-semibold text-white bg-sky-600 rounded-xl w-[190px] max-sm:w-small">
-            <a href="#Home">  <span className="arrow" > {">"} </span>Get in touch</a>
+          <button className="px-9  py-4 text-lg touch-cont max-sm:text-sm  font-semibold text-white bg-sky-600 rounded-xl w-[190px] max-sm:w-small">
+            <a className="group relative cursor-pointer" href="#Home">
+              Get in touch
+              <motion.span
+                className="absolute left-26 opacity-0 translate-x-[-100%] transition-transform duration-500 group-hover:opacity-[100%] group-hover:translate-x-0">
+                &gt;
+              </motion.span>
+
+            </a>
           </button>
           <button className="px-4 py-4 max-sm:w-small max-sm:text-sm text-lg rounded-xl border border-white border-opacity-50 text-white text-opacity-80 w-[180px]">
             Learn more

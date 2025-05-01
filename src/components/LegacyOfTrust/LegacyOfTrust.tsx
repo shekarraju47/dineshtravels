@@ -1,19 +1,39 @@
-import React from "react";
-import { Testimonial, TestimonialProps } from "./Testimonial";
+import React, { useState } from "react";
+import { Testimonial } from "./Testimonial";
 
-const testimonials: TestimonialProps[] = [
+
+
+const testimonial = [
   {
+    id: 0,
     image:
       "https://cdn.builder.io/api/v1/image/assets/TEMP/9fcc3cb9e7b43b3888f70d0b3c34a0757434f9c0",
     quote:
       "Trust is the foundation of great service. We are committed to delivering reliable transport experiences every time.",
     author: "Dinesh Travels Founder",
   },
-
-
+  {
+    id: 1,
+    image:
+      "https://cdn.builder.io/api/v1/image/assets/TEMP/9fcc3cb9e7b43b3888f70d0b3c34a0757434f9c0",
+    quote:
+      "Trust is the foundation of great service.",
+    author: "Dinesh Travels CEO",
+  }
 ];
 
+
+
 const LegacyOfTrust: React.FC = () => {
+
+  const [currentIndex, setCurrentIndex] = useState(0);
+  const [testimonialData, setTestimonialData] = useState(testimonial);
+
+  const Legacy = (id: Number) => {
+    setCurrentIndex(id as number);
+
+  }
+
   return (
     <div className="flex flex-col items-center p-10 w-full bg-white max-md:px-16 max-sm:px-5 max-sm:py-16">
       <div className="flex flex-col max-sm:text-center gap-5 justify-center items-center w-full">
@@ -26,9 +46,14 @@ const LegacyOfTrust: React.FC = () => {
         </p>
       </div>
       <div className="flex gap-8 justify-center items-center p-10 w-full max-w-[100vw] rounded-[5px] max-md:flex-col max-md:px-8 max-md:py-16 max-sm:px-5 max-sm:py-10">
-        {testimonials.map((testimonial, index) => (
-          <Testimonial key={index} {...testimonial} />
-        ))}
+
+        <Testimonial
+          image={testimonialData[currentIndex]?.image}
+          quote={testimonialData[currentIndex]?.quote}
+          author={testimonialData[currentIndex]?.author}
+          onButtonClick={Legacy}
+        />
+
 
       </div>
 

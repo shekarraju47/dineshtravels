@@ -5,12 +5,14 @@ export interface TestimonialProps {
   image: string;
   quote: string;
   author: string;
+  onButtonClick: (id: number) => void;
 }
 
 export const Testimonial: React.FC<TestimonialProps> = ({
   image,
   quote,
   author,
+  onButtonClick,
 }) => {
   return (
     <>
@@ -26,8 +28,14 @@ export const Testimonial: React.FC<TestimonialProps> = ({
             — {author}
           </p>
           <div className="flex gap-[24px] mt-8 items-center">
-            <NavigationArrow direction="left" />
-            <NavigationArrow direction="right" />
+            <NavigationArrow
+              direction="left"
+              onButtonClick={() => onButtonClick(0)} // Assuming 0 represents 'left'
+            />
+            <NavigationArrow
+              direction="right"
+              onButtonClick={() => onButtonClick(1)}
+            />
           </div>
         </div>
       </div>

@@ -8,9 +8,9 @@ import GalleryPage from '../src/components/Gallery/GalleryPage/GalleryPage'
 function App() {
   return (
     <>
-      <div className="fixed bottom-10 right-10">
+      <div className="fixed bottom-10 right-10 max-sm:bottom-5 max-sm:right-5">
         <a href="https://wa.me/+919912345729" target='_blank'>
-          <img className='w-15' src="Whatapp.png" alt="whatapplogo" />
+          <img className='w-15 max-sm:w-10' src="Whatapp.png" alt="whatapplogo" />
         </a>
       </div>
       <Routes>
