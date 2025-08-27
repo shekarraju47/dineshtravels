@@ -1,6 +1,8 @@
 import React from "react";
 import { motion, } from "framer-motion";
 import { useState } from "react";
+import { Dialog, DialogContent, } from "@radix-ui/react-dialog"
+import { Menu } from "lucide-react";
 
 
 interface ImageProps {
@@ -13,9 +15,22 @@ interface ImageProps {
 const Image: React.FC<ImageProps> = ({ src, alt }) => {
 
   const [selectedImage, setSelectedImage] = useState(false);
+  const [isOpen, setIsOpen] = useState(false);
 
 
   const SelectImg = (src: string) => {
+
+    { !isOpen && <Menu className="w-6 h-6 border-none " /> }
+    setIsOpen(true);
+    <Dialog open={isOpen} onOpenChange={setIsOpen}>
+      <DialogContent className="p-3">
+        {/* NavItems is not defined, so this block is removed to fix the error */}
+        {/* <a style={{ color }} className={`text-sm font-semibold text-opacity-60 scroll-smooth`} href="#Home"> Get in touch</a> */}
+
+      </DialogContent>
+    </Dialog>
+
+
     setSelectedImage(true);
     document.body.style.overflow = "hidden";
     const zoomImage = document.createElement("div");

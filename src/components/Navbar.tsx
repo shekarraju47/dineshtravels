@@ -55,10 +55,14 @@ const Navbar: React.FC = (props) => {
       transition={{ duration: 1, blur: 0.5 }}
       style={{ color: '#333333', }} className="flex justify-between items-center h-[106px] max-sm:h-20">
       <NavLink to={NavItems[0].path} className="flex items-center gap-2">
-        <h1 style={{
-          color: `${color}`,
+        <div className="flex items-center gap-2 max-sm:gap-1">
 
-        }} className="text-[24px] max-sm:text-[16px] min-xl:text-[28px] font-[Montserrat] font-bold">DineshTravels!</h1>
+          <img className="w-18 max-sm:w-8" src="./DineshTravelsLogo-Picsart-BackgroundRemover.png" alt="" />
+          <h1 style={{
+            color: `${color}`,
+
+          }} className="text-[24px] max-sm:text-[16px] min-xl:text-[28px] font-[Montserrat] font-bold">DineshTravels!</h1>
+        </div>
       </NavLink>
 
       <div className="flex min-md:gap-3 min-lg:gap-8 min-xl:gap-12 items-center max-md:hidden">
@@ -92,7 +96,7 @@ const Navbar: React.FC = (props) => {
                     key={item.id}
                     to={item.path}
                     style={{ color: `${color}` }}
-                    className= {`${current.pathname === item.path ? 'underline decoration-lime-600' : 'no-underline'} ${item.className} flex scroll-smooth gap-2 items-center text-sm font-semibold text-opacity-60`}
+                    className={`${current.pathname === item.path ? 'underline decoration-lime-600' : 'no-underline'} ${item.className} flex scroll-smooth gap-2 items-center text-sm font-semibold text-opacity-60`}
                   >
                     {item.name}
                   </NavLink>
